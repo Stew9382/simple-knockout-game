@@ -1,0 +1,130 @@
+body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+}
+
+div.wrapper {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+body header h1 {
+    font-size: 48px;
+    background: rgb(71, 94, 95);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 400px;
+}
+
+@keyframes wobble {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-5px) rotate(-5deg); }
+    40% { transform: translateX(5px) rotate(5deg); }
+    60% { transform: translateX(-5px) rotate(-5deg); }
+    80% { transform: translateX(5px) rotate(5deg); }
+    100% { transform: translateX(0); }
+  }
+
+h1.wobble-text {
+    animation: wobble 3s infinite;
+}
+
+/* Tyckte det var lite roligt med en "wobblande" text. */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(123, 109, 173);
+    height: 30px;
+    width: 100%;
+    flex-direction: column;
+}
+
+footer p {
+    margin: 1px;
+    font-weight: lighter;
+    font-size: 8px;
+    color: #eee;
+}
+
+article.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0;
+    width: 100%;
+}
+
+article.main h1 {
+    font-size: 32px;
+    font-weight: lighter;
+    color: gray;
+}
+
+article.main a.instruktioner {
+    text-decoration: none;
+    color: white;
+    background: rgb(71, 71, 71);
+    border-style: hidden;
+    padding: 7px;
+    font-weight: bold;
+    margin-top: 50px;
+    font-size: 12px;
+    user-select: none;
+}
+
+article.main a.instruktioner:hover {
+    text-decoration: none;
+    color: black;
+    background: rgb(180, 180, 180);
+    transition: all 0.3s;
+}
+
+article.main a.instruktioner:active {
+    text-decoration: none;
+    color: white;
+    background: rgb(71, 71, 71);
+}
+
+article.main a.spelet {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 32px;
+    color: red;
+    transition: all 0.3s;
+    user-select: none;
+}
+
+article.main a.spelet:hover {
+    transform: scale(1.3);
+}
+
+article.main a.spelet:hover {
+    text-decoration: none;
+}
+
+article.main a.spelet:active {
+    text-decoration: none;
+}

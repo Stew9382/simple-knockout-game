@@ -1,0 +1,169 @@
+body {
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    box-sizing: border-box;
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    width: 100%;
+}
+
+div.wrapper {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+div.wrapper article.main {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+div.wrapper article.secondary {
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+div.wrapper p.dices { 
+    text-decoration: none;
+    color: white;
+    background: rgb(71, 71, 71);
+    border-style: hidden;
+    padding: 7px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 50px;
+}
+
+div.wrapper p.dices:hover {
+    text-decoration: none;
+    color: black;
+    background: rgb(180, 180, 180);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+div.wrapper p.dices:active {
+    text-decoration: none;
+    color: white;
+    background: rgb(71, 71, 71);
+}
+
+div.wrapper a.back { 
+    text-decoration: none;
+    color: white;
+    background: rgb(71, 71, 71);
+    border-style: hidden;
+    padding: 7px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 75px;
+    font-size: 12px;
+    user-select: none;
+
+}
+
+div.wrapper a.back:hover {
+    text-decoration: none;
+    color: black;
+    background: rgb(180, 180, 180);
+    transition: all 0.3s;
+}
+
+div.wrapper a.back:active {
+    text-decoration: none;
+    color: white;
+    background: rgb(71, 71, 71);
+}
+
+div.wrapper p.currentNumber {
+    color: rgb(255, 0, 0);
+    margin-top: 5px;
+}
+
+div.wrapper p.score {
+    color: rgb(0, 0, 0);
+}
+
+div.wrapper header h1 {
+    font-size: 48px;
+    background: rgb(71, 94, 95);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 400px;
+}
+
+p.six, p.seven, p.eight, p.nine {
+    border: solid;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    user-select: none;
+    cursor: grab;
+}
+
+p.six:hover, p.seven:hover, p.eight:hover, p.nine:hover {
+    background: gray;
+    color: white;
+    border-color: black;
+}
+
+p.six:active, p.seven:active, p.eight:active, p.nine:active {
+    color: initial;
+    background: initial;
+}
+
+p.siffra {
+    margin-top: 50px;
+}
+
+p.sixred {
+    background: red;
+}
+
+p.sevenRed {
+    background:rgb(255, 0, 0);
+}
+
+p.eightRed {
+    background:rgb(255, 0, 0);
+}
+
+p.nineRed {
+    background:rgb(255, 0, 0);
+}
+
+p.end {
+    font-weight: bolder;
+    font-style: italic;
+}
